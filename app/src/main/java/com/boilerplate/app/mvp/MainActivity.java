@@ -198,7 +198,7 @@ public class MainActivity<uri> extends AppCompatActivity {
 
                 request.allowScanningByMediaScanner();
                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED); //Notify client once download is completed!
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Feel");
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "Boilerplate");
                 DownloadManager dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
                 dm.enqueue(request);
                 Toast.makeText(getApplicationContext(), "Downloading File", //To notify the Client that the file is being downloaded
